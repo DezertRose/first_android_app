@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lr_1_ver_2</string>
+    <string name="TextInput">Write your text</string>
+    <string name="first_RBut">monospace</string>
+    <string name="second_RBut">casual</string>
+    <string name="third_RBut">sans-serif-smallcaps</string>
+    <string name="four_RBut">sans-serif_medium</string>
+</resources>
