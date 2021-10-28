@@ -1,2 +1,4 @@
 # first_android_app
-First lr
+First lr 
+variant: 3 
+Shnyrkova Daria IP-96
