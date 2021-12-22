@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_input">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="122dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/choose_font"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inpText"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="@string/write_your_text"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:importantForAutofill="no" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="182dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpText"
+        android:focusable="true">
+
+        <RadioButton
+            android:id="@+id/first_RBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="monospace"
+            android:text="@string/monospace"
+            android:typeface="monospace"
+            app:buttonTint="#673AB7" />
+
+        <RadioButton
+            android:id="@+id/second_RBut"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/casual"
+            app:buttonTint="#673AB7" />
+
+        <RadioButton
+            android:id="@+id/third_RBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/sans_serif_smallcaps"
+            app:buttonTint="#673AB7" />
+
+        <RadioButton
+            android:id="@+id/four_RBut"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="@string/sans_serif_medium"
+            app:buttonTint="#673AB7" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="84dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="172dp"
+        android:onClick="onOk"
+        android:text="@string/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpText"
+        app:layout_goneMarginBottom="20dp"
+        tools:ignore="UsingOnClickInXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
